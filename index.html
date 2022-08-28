@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <title>W3.CSS Template</title>
 </head>
@@ -14,22 +15,27 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">More
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More
                         <i class="nav-row-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
         </div>
         <div id="slider">
@@ -44,7 +50,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <div class="section-heading">
                     THE BAND
                 </div>
@@ -64,19 +70,19 @@
                 </p>
 
                 <div class="row members-list">
-                    <div class="col col-3 text-center">
+                    <div class="member-item col col-3 s-col-full mt-16 text-center">
                         <p class="member-name">
                             Name
                         </p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="col col-3 text-center">
+                    <div class="member-item col col-3 s-col-full mt-16 text-center">
                         <p class="member-name">
                             Name
                         </p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="col col-3 text-center">
+                    <div class="member-item col col-3 s-col-full mt-16 text-center">
                         <p class="member-name">
                             Name
                         </p>
@@ -84,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tour-section">
+            <div class="tour-section" id="tour">
                 <div class="content-section">
                     <h2 class="section-heading text-white">
                         TOUR DATES
@@ -115,7 +121,7 @@
                     </ul>
 
                     <div class="row places-list">
-                        <div class="col col-3">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/img/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">
@@ -127,10 +133,10 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="btn">Buy Tickets</a>
+                                <a href="#" class="btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/img/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">
@@ -142,10 +148,10 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="btn">Buy Tickets</a>
+                                <a href="#" class="btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="col col-3">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/img/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">
@@ -157,16 +163,14 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="btn">Buy Tickets</a>
+                                <a href="#" class="btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
 
                     </div>
-
-                    <div class="col col-3r"></div>
                 </div>
             </div>
-            <div class="content-section">
+            <div class="content-section" id="contact">
                 <h2 class="section-heading">
                     CONTACT
                 </h2>
@@ -176,20 +180,20 @@
                 </p>
 
                 <div class="row contact-body">
-                    <div class="col col-2 contact-info">
+                    <div class="col col-2 s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
                         <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                         <p><i class="ti-email"></i>Email: mail@mail.com</p>
                     </div>
-                    <div class="col col-2 contact-form">
-                        <form action="">
+                    <div class="col col-2 s-col-full contact-form">
+                        <form action="#">
                             <div class="row contact-content">
-                                <div class="col col-2">
+                                <div class="col col-2 s-col-full">
                                     <input type="text" placeholder="Name" class="form-control">
                                 </div>
 
-                                <div class="col col-2">
-                                    <input type="email" placeholder="Email" class="form-control">
+                                <div class="col col-2 s-col-full s-mt-8">
+                                    <input type="email" placeholder="Email" class="form-control ">
                                 </div>
 
                             </div>
@@ -198,7 +202,7 @@
                                     <input type="text" placeholder="Message" class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" class="btn mt-16 pull-right" value="SEND">
+                            <input type="submit" class="btn mt-16 pull-right s-full-width" value="SEND">
                         </form>
                     </div>
                 </div>
@@ -275,6 +279,36 @@
         </div>
 
     </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function (event) {
+                var isParentMenu = this.nextElementSibling && this.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
